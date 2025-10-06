@@ -43,4 +43,7 @@ client.on('error', err => {
   client.login(process.env.DISCORD_TOKEN);
 });
 
+app.get('/healthz', (req, res) => res.send('OK'));
+
+
 client.login(process.env.DISCORD_TOKEN);
