@@ -4,6 +4,8 @@ const app = express();
 
 require('dotenv').config();
 
+app.use(express.static('public'));
+
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
